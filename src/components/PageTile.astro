@@ -1,0 +1,32 @@
+---
+/**
+ * entry: obiekt z getCollection()/getEntry()
+ * buttonHref: gdzie ma prowadzić przycisk (np. entry.slug)
+ */
+const { entry, buttonHref = "#", buttonText = "Get Started", id } = Astro.props;
+
+// renderuje markdown body do komponentu Content
+const { Content } = await entry.render();
+
+const sectionId = id ?? entry.slug ?? "tile";
+---
+
+<section id={sectionId}>
+  <div class="inner">
+    <header class="major">
+      <h2>{entry.data.title}</h2>
+    </header>
+
+    <div class="content">
+      <Content />
+    </div>
+
+    <ul class="actions">
+      <li>
+        <a href={buttonHref} class="button next">
+          {buttonText}
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
