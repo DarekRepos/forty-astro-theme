@@ -3,6 +3,7 @@ import Head from "../components/Head.astro";
 import Wrapper from "../components/Wrapper.astro";
 import Footer from "../components/Footer.astro";
 import { site } from "../data/site";
+import mainUrl from "../scripts/main.ts?url";
 const pageTitle = Astro.props.title;
 const base = import.meta.env.BASE_URL;
 ---
@@ -22,13 +23,6 @@ const base = import.meta.env.BASE_URL;
       subtitle={site.subtitle}
       socials={site.socials}
     />
-    <!-- Theme scripts (using JSX comments so Astro doesn't try to parse the braces) -->
-    <!-- Theme scripts -->
-    <script is:inline src={base + "/scripts/jquery.min.js"}></script>
-    <script is:inline src={base + "/scripts/jquery.scrolly.min.js"}></script>
-    <script is:inline src={base + "/scripts/jquery.scrollex.min.js"}></script>
-    <script is:inline src={base + "/scripts/util.js"}></script>
-    <script is:inline src={base + "/scripts/main.js"}></script>
-    <!-- droping support for ie8 an ie9 -->
+    <script type="module" src={mainUrl}></script>
   </body>
 </html>
