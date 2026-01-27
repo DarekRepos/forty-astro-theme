@@ -7,7 +7,7 @@ export type NavItem = {
 
 export const navItems: NavItem[] = [
   { title: "Home", href: "/", isHome: true, inMenu: true },
-  { title: "Landing", href: "/landing/", inMenu: true },
-  { title: "About", href: "/about/", inMenu: true },
+  { title: "Landing", href: "/landing", inMenu: true },
+  { title: "About", href: "/about", inMenu: true },
   // add more…
 ];
