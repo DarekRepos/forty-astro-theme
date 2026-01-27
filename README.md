@@ -1,54 +1,57 @@
-# Astro Starter Kit: Basics
+# Astro Forty Theme 🚀
 
-```sh
-npm create astro@latest -- --template basics
+A modern, high-performance port of the classic **Forty** template by [HTML5 UP](https://html5up.net), rebuilt from the ground up using **Astro 5.0**, **Dart Sass**, and **Astro Icon**.
+
+
+
+## ✨ Key Features
+
+* **Astro 5.0 Framework**: Ultra-fast performance with zero-JavaScript by default.
+* **Content Collections**: Manage your portfolio and blog posts easily using Markdown (`.md`).
+* **Modern SCSS**: Rebuilt styling logic using `@use` modules and CSS Grid for better maintainability.
+* **Astro Icon**: High-performance SVG icon system (integrated with Iconify).
+* **Responsive Design**: Fully optimized for mobile, tablet, and desktop views.
+* **Type Safe**: Built with TypeScript for a better developer experience.
+
+## 🛠️ Tech Stack
+
+* **Framework:** [Astro](https://astro.build/)
+* **Styling:** [Sass (SCSS)](https://sass-lang.com/)
+* **Icons:** [Astro Icon](https://github.com/natemoo-re/astro-icon)
+* **Content:** Markdown / Content Collections
+
+## 🚀 Getting Started
+
+### 1. Use as Template
+Click the green **"Use this template"** button at the top of this repository to create your own copy.
+
+### 2. Install Dependencies
+Clone your new repository and run:
+```bash
+npm install
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+### 3. Start Developing
+```bash
+npm run dev
 ```
+Open http://localhost:4321 in your browser to see the magic.
+## ⚙️ Configuration
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+No coding required! To change the site name, contact info, or social links:
+1. Open `src/content/config/site.md`.
+2. Update the values in the top section (the YAML frontmatter).
+3. Save, and the site updates automatically.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 📝 Adding Content (Tiles)
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Your homepage tiles are driven by Markdown files:
+1. Go to `src/content/posts/`.
+2. Create a new file (e.g., `my-project.md`).
+3. Fill in the title and image path in the frontmatter:
+   ```markdown
+   ---
+   title: "Blueberry Project"
+   description: "A fresh look at design"
+   image: "/src/assets/pic01.jpg"
+   ---
+   Your post content goes here!
