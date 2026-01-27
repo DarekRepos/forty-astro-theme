@@ -1,15 +1,21 @@
 import { defineCollection, z } from "astro:content";
 
-const tilesSchema = z.object({
-  title: z.string(),
-  description: z.string().optional(),
-  image: z.string(),
-  show_tile: z.boolean().optional(), // default true if missing
+// Use the ({ image }) helper in the schema function
+const pages = defineCollection({
+  schema: ({ image }) => z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    image: image(), // Changed from z.string() to image()
+    show_tile: z.boolean().optional().default(true),
+  }),
 });
 
-const pages = defineCollection({ schema: tilesSchema });
 const posts = defineCollection({
-  schema: tilesSchema.extend({
+  schema: ({ image }) => z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    image: image(), // Changed from z.string() to image()
+    show_tile: z.boolean().optional().default(true),
     pubDate: z.date().optional(),
   }),
 });

@@ -21,6 +21,15 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    .style2 {
+    background-color: var(--bg);
+    position: relative;
+
+    .image {
+        display: none; // The JS or CSS handles this as a background-image
+    }
+}
+
     // This specifically targets the image used as a background
     // and overrides the global .image (inline-block/relative) settings
     .image {

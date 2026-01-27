@@ -1,6 +1,6 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
-
+import Image from "astro/components/Image.astro";
 type TileSource = "pages" | "posts";
 
 type TileEntry = CollectionEntry<"pages"> | CollectionEntry<"posts">;
@@ -43,7 +43,12 @@ const joinBase = (p: string) =>
     tiles.map((tile) => (
       <article>
         <span class="image">
-          <img src={joinBase(tile.data.image)} alt={tile.data.title} />
+          <Image 
+        src={tile.data.image} 
+        alt={tile.data.title} 
+        width={800} 
+        height={600} 
+      />
         </span>
 
         <header class="major">

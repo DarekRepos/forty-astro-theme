@@ -1,7 +1,7 @@
 ---
 title: Second Post
 description: Another example post with placeholder content.
-image: /images/pic04.jpg
+image: ./images/pic04.jpg
 show_tile: true
 pubDate: 2026-01-02
 ---

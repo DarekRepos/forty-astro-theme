@@ -1,7 +1,7 @@
 ---
 title: About
 description: Learn more about who we are and what we do.
-image: /images/pic01.jpg
+image: ./images/pic01.jpg
 show_tile: true
 ---
 

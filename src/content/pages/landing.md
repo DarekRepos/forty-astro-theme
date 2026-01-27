@@ -1,7 +1,7 @@
 ---
 title: Landing
 description: A clean landing page to introduce the site.
-image: /images/pic02.jpg
+image: ./images/pic02.jpg
 show_tile: true
 ---
 

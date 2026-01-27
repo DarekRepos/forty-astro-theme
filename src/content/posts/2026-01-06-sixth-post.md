@@ -1,7 +1,7 @@
 ---
 title: Sixth Post
 description: The last demo post in the tiles collection.
-image: /images/pic08.jpg
+image: ./images/pic08.jpg
 show_tile: true
 pubDate: 2026-01-06
 ---
