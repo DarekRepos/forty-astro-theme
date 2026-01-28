@@ -8,7 +8,7 @@ const { frontmatter } = Astro.props;
   <section id="banner" class="style2">
     <div class="inner">
       <span class="image">
-        <Image src={frontmatter.image} alt="" loading="eager"  decoding="sync"/>
+        <Image src={frontmatter.image} alt=""/>
       </span>
       <header class="major">
         <h1>{frontmatter.title}</h1>
