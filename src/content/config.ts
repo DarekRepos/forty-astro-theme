@@ -20,4 +20,15 @@ const posts = defineCollection({
   }),
 });
 
-export const collections = { pages, posts };
+const projects = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    tags: z.array(z.string()),
+    image: z.string(),
+    repoUrl: z.string().optional(),
+  }),
+});
+
+export const collections = { pages, posts, projects };
