@@ -22,13 +22,14 @@ const posts = defineCollection({
 
 const projects = defineCollection({
   type: 'content',
-  schema: z.object({
+    schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
     tags: z.array(z.string()),
-    image: z.string(),
+    image: image(),
     repoUrl: z.string().optional(),
   }),
 });
+
 
 export const collections = { pages, posts, projects };

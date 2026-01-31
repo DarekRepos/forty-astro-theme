@@ -2,7 +2,7 @@
 title: "Title Project"
 description: "This is short description of  the project"
 tags: ["HTML", "CSS", "Python", "Flask"]
-image: "/assets/images/pic11.jpg"
+image: "./images/pic11.jpg"
 repoUrl: "https://github.com/MyRepo/app-link"
 ---
 

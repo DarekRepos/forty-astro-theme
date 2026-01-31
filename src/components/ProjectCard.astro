@@ -2,7 +2,7 @@
 // Import the CollectionEntry type from astro
 import type { CollectionEntry } from "astro:content";
 import { Image } from "astro:assets";
-import ProjectImage from "../assets/images/pic11.jpg";
+
 
 // Define the interface for your component props
 interface Props {
@@ -20,7 +20,7 @@ const isOdd = index % 2 !== 0;
 
 <section class={`project-card ${isOdd ? "is-odd" : ""}`}>
   <div class="image-container">
-    <Image src={ProjectImage} alt="Banner background" />
+    <Image src={image} alt="Banner background" />
   </div>
 
   <div class="content">
