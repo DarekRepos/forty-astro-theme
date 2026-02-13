@@ -22,9 +22,8 @@ const pageTitle = Astro.props.title;
       subtitle={site.subtitle}
       socials={site.socials}
     />
-<script>
-  import  "../forty-astro-theme/scripts/main.ts";
-</script>
-
+    <script type="module">
+      import "/src/scripts/main.ts";
+    </script>
   </body>
 </html>
