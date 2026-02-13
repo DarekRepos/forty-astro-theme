@@ -4,7 +4,9 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-    base: "/forty-jekyll-theme",
+    site: 'https://DarekRepos.github.io',
+    base: '/forty-astro-theme/',
+    output: 'static',
     integrations: [
         icon(),
     ],
