@@ -6,7 +6,6 @@ import icon from 'astro-icon';
 export default defineConfig({
     site: 'https://DarekRepos.github.io',
     base: '/forty-astro-theme/',
-    output: 'static',
     integrations: [
         icon(),
     ],
