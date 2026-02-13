@@ -3,9 +3,8 @@ import Head from "../components/Head.astro";
 import Wrapper from "../components/Wrapper.astro";
 import Footer from "../components/Footer.astro";
 import { site } from "../data/site";
-import  "../scripts/main.ts";
-const pageTitle = Astro.props.title;
 
+const pageTitle = Astro.props.title;
 ---
 
 <html lang="en">
@@ -23,6 +22,9 @@ const pageTitle = Astro.props.title;
       subtitle={site.subtitle}
       socials={site.socials}
     />
-    <script type="module" src="../scripts/main.ts"></script>
+<script>
+  import  "../forty-astro-theme/scripts/main.ts";
+</script>
+
   </body>
 </html>
