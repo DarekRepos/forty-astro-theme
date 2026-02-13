@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import { site } from "../data/site";
 
 const pageTitle = Astro.props.title;
+const base = import.meta.env.BASE_URL;
 ---
 
 <html lang="en">
@@ -22,8 +23,8 @@ const pageTitle = Astro.props.title;
       subtitle={site.subtitle}
       socials={site.socials}
     />
-    <script type="module">
-      import "../scripts/main.ts";
-    </script>
+    
+<script src="../scripts/main.ts"></script>
+
   </body>
 </html>
